@@ -3,6 +3,11 @@ if not status_ok then
   return
 end
 
+local set = vim.opt -- set options
+set.tabstop = 4
+set.softtabstop = 4
+set.shiftwidth = 4
+
 indent_blankline.setup {
   char = "▏",
   show_trailing_blankline_indent = false,
