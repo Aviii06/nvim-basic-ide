@@ -50,6 +50,9 @@ keymap("i", "jk", "<ESC>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- Terminal
+keymap("n", "<leader>c", ":split term://zsh<CR>", opts)
+
 -- Plugins --
 
 -- NvimTree
