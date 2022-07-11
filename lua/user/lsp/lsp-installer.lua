@@ -12,6 +12,15 @@ local servers = {
   "bashls",
   "jsonls",
   "yamlls",
+  "vuels",
+  "golangci_lint_ls",
+  "clangd",
+  "jdtls",
+  "marksman",
+  "lemminx",
+  "intelephense",
+  "grammarly",
+  "cmake",
 }
 
 lsp_installer.setup()
