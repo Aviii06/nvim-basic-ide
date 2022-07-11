@@ -38,6 +38,9 @@ keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 -- Close buffers
 keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 
+-- Delete without copying
+keymap("n", "\\", "\"_", opts)
+
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
@@ -52,6 +55,7 @@ keymap("v", ">", ">gv", opts)
 
 -- Terminal
 keymap("n", "<leader>c", ":split term://zsh<CR>", opts)
+keymap("n", "<leader>C", ":vsplit term://zsh<CR>", opts)
 
 -- Plugins --
 
