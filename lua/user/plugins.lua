@@ -59,6 +59,8 @@ return packer.startup(function(use)
   use { "junegunn/fzf", run = ":call fzf#install()" }
   use "junegunn/fzf.vim"
 
+  -- Coc
+  use {'neoclide/coc.nvim', branch = 'release'}
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
