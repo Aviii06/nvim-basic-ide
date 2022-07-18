@@ -15,12 +15,23 @@ vim.g.mapleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+-- Copy to clipboard
+keymap("n", "Y", "\"+y", opts)
+keymap("v", "Y", "\"+y", opts)
+keymap("x", "Y", "\"+y", opts)
+
+keymap("n", "D", "\"+d", opts)
+keymap("v", "D", "\"+d", opts)
+keymap("x", "D", "\"+d", opts)
+
 -- Normal --
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+
+
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
